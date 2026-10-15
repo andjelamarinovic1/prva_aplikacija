@@ -11,16 +11,16 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Prva aplikacija',
       home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Moja prva aplikacija'),
-        ),
+        appBar: AppBar(title: const Text('Andjelina aplikacija')),
         body: const Center(
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              Text('Student: Ime Prezime'),
+              Text('Student: Andjela Marinovic'),
               SizedBox(height: 12),
               Text('Dart i Flutter'),
+              SizedBox(height: 12),
+              Text('Želim naučiti izraditi vlastitu mobilnu aplikaciju.'),
             ],
           ),
         ),

@@ -1,4 +1,4 @@
-// ignore_for_file: avoid_print, equal_elements_in_set
+// ignore_for_file: avoid_print, equal_elements_in_set, dead_code, dead_null_aware_expression
 void main() {
   final ime = 'Andela';
   int brojVjezbe = 1;
