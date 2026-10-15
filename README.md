@@ -1,6 +1,3 @@
-# prva_aplikacija
-
-A new Flutter project.
 # Vježba 1 – Postavljanje okruženja, Git i prva Flutter aplikacija
 
 **Student:** Anđela Marinović
@@ -8,24 +5,20 @@ A new Flutter project.
 
 ## Okruženje
 
-- **Operacijski sustav:** Windows
-- **Flutter verzija:** 3.47.7
+- **Operacijski sustav:** Windows 11
+- **Flutter verzija:** 3.47.7 (stable)
 - **Dart verzija:** 3.13.5
-- **Korišteni uređaj:** Chrome (web) – `flutter run -d chrome`
+- **Korišteni uređaj:** fizički Android uređaj 23117RA68G, Android 13 (API 33), ID `lzrwlbfafqmz5hc6`
+- **Dodatno provjereno:** Chrome (web) – `flutter run -d chrome`
 
-### Napomena o Android provjeri
+### Napomena o Android okruženju
 
-Android provjera još nije dovršena. Aplikacija je privremeno pokrenuta u pregledniku Chrome (web fallback).
-Android SDK i emulator su instalirani, ali `flutter doctor` za Android toolchain prijavljuje:
+`flutter doctor` prikazuje ispravan Android toolchain (Android SDK 36.1.0).
+Android emulator (Medium Phone API 37.0) se na ovom računalu ruši pri pokretanju
+(„Android Emulator closed unexpectedly”), pa je aplikacija pokrenuta na vlastitom
+Android uređaju preko USB debugginga (Opcija B iz uputa).
 
-```
-X cmdline-tools component is missing.
-X Android license status unknown.
-  Run `flutter doctor --android-licenses` to accept the SDK licenses.
-```
-
-Za dovršetak je potrebno u Android Studiu (SDK Manager → SDK Tools) instalirati
-Android SDK Command-line Tools i zatim pokrenuti `flutter doctor --android-licenses`.
+Upozorenje za Visual Studio (Windows desktop) ne odnosi se na ovu vježbu.
 
 ## Provedene izmjene
 
@@ -37,6 +30,7 @@ Android SDK Command-line Tools i zatim pokrenuti `flutter doctor --android-licen
 - Dodan završeni zadatak `Prvi commit`; broj otvorenih zadataka ostaje 2 jer je novi zadatak završen
 - Dodana funkcija `naslovi` koja pomoću `where` i `map` vraća naslove otvorenih zadataka (`[Git, Dart]`)
 - `prikazNapomene` pozvana s tekstom i s vrijednošću `null`
+- U `ignore_for_file` dodana su upozorenja `dead_code` i `dead_null_aware_expression` jer nakon dodjele teksta varijabli `napomena` operator `??` više nije potreban
 
 ### Flutter zaslon (`lib/main.dart`)
 - Promijenjen naslov aplikacijskog zaslona u „Andjelina aplikacija”
